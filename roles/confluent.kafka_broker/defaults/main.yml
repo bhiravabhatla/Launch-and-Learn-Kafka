@@ -63,7 +63,7 @@ kafka_broker:
     log.segment.bytes: 1073741824
     num.io.threads: 16
     num.network.threads: 8
-    num.partitions: 1
+    num.partitions: 8
     num.recovery.threads.per.data.dir: 2
     offsets.topic.replication.factor: "{{kafka_broker_default_interal_replication_factor}}"
     socket.receive.buffer.bytes: 102400
