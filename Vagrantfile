@@ -32,26 +32,26 @@ Vagrant.configure("2") do |config|
           broker3.vm.box = "centos/7"
           broker3.vm.network 'private_network', ip: '192.168.57.62'
           broker3.vm.provider "virtualbox" do |v|
-           v.memory = 1024
+           v.memory = 2048
            v.cpus = 2
           end
   end
-    config.vm.define "broker4" do |broker4|
-            broker4.vm.box = "centos/7"
-            broker4.vm.network 'private_network', ip: '192.168.57.63'
-            broker4.vm.provider "virtualbox" do |v|
-             v.memory = 1024
-             v.cpus = 2
-            end
-    end
-      config.vm.define "broker5" do |broker5|
-              broker5.vm.box = "centos/7"
-              broker5.vm.network 'private_network', ip: '192.168.57.64'
-              broker5.vm.provider "virtualbox" do |v|
-               v.memory = 1024
-               v.cpus = 2
-              end
-      end
+#     config.vm.define "broker4" do |broker4|
+#             broker4.vm.box = "centos/7"
+#             broker4.vm.network 'private_network', ip: '192.168.57.63'
+#             broker4.vm.provider "virtualbox" do |v|
+#              v.memory = 1024
+#              v.cpus = 2
+#             end
+#     end
+#       config.vm.define "broker5" do |broker5|
+#               broker5.vm.box = "centos/7"
+#               broker5.vm.network 'private_network', ip: '192.168.57.64'
+#               broker5.vm.provider "virtualbox" do |v|
+#                v.memory = 1024
+#                v.cpus = 2
+#               end
+#       end
   config.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "~/.ssh/me.pub"
   config.vm.provision "shell", inline: <<-SHELL
     cat /home/vagrant/.ssh/me.pub >> /home/vagrant/.ssh/authorized_keys

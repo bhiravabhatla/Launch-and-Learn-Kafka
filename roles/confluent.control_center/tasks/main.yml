@@ -73,6 +73,15 @@
   include_tasks: rbac.yml
   when: rbac_enabled|bool
 
+- name: Copy LDAP Config
+  template:
+    src: control-center-jaas.conf
+    dest: "{{control_center.ldap_config_file}}"
+    mode: 0640
+    owner: "{{control_center_user}}"
+    group: "{{control_center_group}}"
+  notify: restart control center
+
 - name: Create Control Center Config
   template:
     src: control-center.properties.j2
