@@ -117,7 +117,7 @@ confluent.metadata.bootstrap.server.urls={% for host in groups['kafka_broker'] %
 confluent.metadata.basic.auth.user.info={{control_center_ldap_user}}:{{control_center_ldap_password}}
 {% endif %}
 
-confluent.controlcenter.rest.authentication.realm=c3
-confluent.controlcenter.rest.authentication.method=BASIC
+#confluent.controlcenter.rest.authentication.realm=c3
+#confluent.controlcenter.rest.authentication.method=BASIC
 #confluent.controlcenter.auth.restricted.roles=RestrictedGroupName
-confluent.controlcenter.rest.authentication.roles=dev,devops,rmt,readers
+#confluent.controlcenter.rest.authentication.roles=dev,devops,rmt,readers

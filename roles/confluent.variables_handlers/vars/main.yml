@@ -122,3 +122,9 @@ control_center:
   systemd_override: /etc/systemd/system/{{control_center_service_name}}.service.d/override.conf
   ldap_config_file: /etc/confluent-control-center/control-center-jaas.conf
 control_center_custom_java_args: "-Djava.security.auth.login.config=/etc/confluent-control-center/control-center-jaas.conf"
+#mds_private_key_path: /var/ssl/private/generation/tokenKeypair.pem
+#mds_public_key_path: /var/ssl/private/generation/public.pem
+#mds_acls_enabled: false
+#super_users: [ 'User:{{ mds_super_user }}' ]
+kafka_broker_inter_broker_listener_name: "internal"
+control_center_kafka_listener_name: "token"

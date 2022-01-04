@@ -36,14 +36,14 @@ Vagrant.configure("2") do |config|
            v.cpus = 2
           end
   end
-#     config.vm.define "broker4" do |broker4|
-#             broker4.vm.box = "centos/7"
-#             broker4.vm.network 'private_network', ip: '192.168.57.63'
-#             broker4.vm.provider "virtualbox" do |v|
-#              v.memory = 1024
-#              v.cpus = 2
-#             end
-#     end
+#   config.vm.define "broker4" do |broker4|
+#         broker4.vm.box = "centos/7"
+#         broker4.vm.network 'private_network', ip: '192.168.57.63'
+#         broker4.vm.provider "virtualbox" do |v|
+#          v.memory = 1024
+#          v.cpus = 2
+#         end
+#   end
 #       config.vm.define "broker5" do |broker5|
 #               broker5.vm.box = "centos/7"
 #               broker5.vm.network 'private_network', ip: '192.168.57.64'

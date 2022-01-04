@@ -4,3 +4,4 @@
 *.idea
 generated_ssl_files/
 .vagrant
+roles/ansible-role-docker/

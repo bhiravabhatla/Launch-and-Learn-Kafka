@@ -1,4 +1,7 @@
 ---
+- debug:
+    msg: "{{kafka_broker_inter_broker_listener_name}}"
+
 - name: Set Principal - Sasl Scram
   set_fact:
     kafka_broker_principal: "{{ sasl_scram_users.admin.principal }}"

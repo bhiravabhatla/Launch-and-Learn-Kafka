@@ -1,4 +1,10 @@
 ---
+- name: Docker Machine Provision
+  hosts: kafka_broker[2]
+  tasks:
+  - import_role:
+      name: ldap-docker-setup
+
 - name: Generate CA for Self Signed Certs
   hosts: zookeeper[0]
   tags: certificate_authority
