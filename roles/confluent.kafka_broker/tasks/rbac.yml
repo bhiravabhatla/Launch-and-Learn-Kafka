@@ -2,11 +2,6 @@
 - name: Get Principal used on the Inter Broker Listener
   include_tasks: set_principal.yml
 
-# TODO customers might want to add to this list, so should put in defaults
-- name: Initialize Super Users List
-  set_fact:
-    super_users: []
-
 - name: Add each Broker Principal to Super Users List
   set_fact:
     super_users: "{{ super_users }} + [ '{{ hostvars[item]['kafka_broker_principal'] }}' ]"

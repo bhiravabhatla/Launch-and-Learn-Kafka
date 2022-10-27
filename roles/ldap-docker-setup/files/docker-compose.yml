@@ -14,7 +14,7 @@ services:
     volumes:
         - ./ldap_users:/container/service/slapd/assets/config/bootstrap/ldif/custom
     command: "--copy-service --loglevel debug"
-
+    restart: always
 volumes:
   openldap_data:
     driver: local

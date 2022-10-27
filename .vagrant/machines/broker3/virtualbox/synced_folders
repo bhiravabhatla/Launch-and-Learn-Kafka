@@ -1,1 +1,1 @@
-{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/nikhil.bhat/idfc/Launch-and-Learn-Kafka","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/santosh/projects/idfc/Launch-and-Learn-Kafka","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

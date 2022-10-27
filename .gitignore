@@ -3,5 +3,5 @@
 *.pyc
 *.idea
 generated_ssl_files/
-.vagrant
+.vagrant/*
 roles/ansible-role-docker/

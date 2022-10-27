@@ -25,6 +25,7 @@ kafka_broker_sysctl:
   vm.dirty_background_ratio: 5
   vm.dirty_ratio: 60
 
+super_users: []
 kafka_broker_sysctl_file: /etc/sysctl.conf
 
 kafka_broker_metrics_reporter_enabled: true

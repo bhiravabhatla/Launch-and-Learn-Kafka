@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
       broker1.vm.box = "centos/7"
       broker1.vm.network 'private_network', ip: '192.168.57.60'
       broker1.vm.provider "virtualbox" do |v|
-       v.memory = 4096
+       v.memory = 2048
        v.cpus = 2
       end
   end
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
         broker2.vm.box = "centos/7"
         broker2.vm.network 'private_network', ip: '192.168.57.61'
         broker2.vm.provider "virtualbox" do |v|
-         v.memory = 1024
+         v.memory = 2048
          v.cpus = 2
         end
   end
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
           broker3.vm.box = "centos/7"
           broker3.vm.network 'private_network', ip: '192.168.57.62'
           broker3.vm.provider "virtualbox" do |v|
-           v.memory = 2048
+           v.memory = 4096
            v.cpus = 2
           end
   end

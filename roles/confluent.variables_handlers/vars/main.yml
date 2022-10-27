@@ -125,6 +125,8 @@ control_center_custom_java_args: "-Djava.security.auth.login.config=/etc/conflue
 #mds_private_key_path: /var/ssl/private/generation/tokenKeypair.pem
 #mds_public_key_path: /var/ssl/private/generation/public.pem
 #mds_acls_enabled: false
-#super_users: [ 'User:{{ mds_super_user }}' ]
+super_users: [ 'User:ANONYMOUS' ]
 kafka_broker_inter_broker_listener_name: "internal"
 control_center_kafka_listener_name: "token"
+kafka_connect_kafka_listener_name: "token"
+kafka_connect_additional_system_admins: ["superUser"]
